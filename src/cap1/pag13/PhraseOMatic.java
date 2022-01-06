@@ -1,4 +1,4 @@
-package cap1;
+package cap1.pag13;
 
 public class PhraseOMatic {
     public static void main(String[] args) {

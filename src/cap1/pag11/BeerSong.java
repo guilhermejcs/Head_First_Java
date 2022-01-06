@@ -1,4 +1,4 @@
-package cap1;
+package cap1.pag11;
 
 public class BeerSong {
     public static void main(String[] args) {
