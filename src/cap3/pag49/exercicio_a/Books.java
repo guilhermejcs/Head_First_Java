@@ -1,4 +1,4 @@
-package cap3.pag49.exercicioA;
+package cap3.pag49.exercicio_a;
 
 public class Books {
     String title;

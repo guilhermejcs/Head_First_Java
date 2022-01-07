@@ -1,4 +1,4 @@
-package cap2.pag33.exercicioB;
+package cap2.pag33.exercicio_b;
 
 public class DVDPlayerTestDriver {
     public static void main(String[] args) {

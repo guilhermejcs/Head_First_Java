@@ -1,4 +1,4 @@
-package cap2.pag33.exercicioA;
+package cap2.pag33.exercicio_a;
 
 public class TapeDeskTestDrive {
     public static void main(String[] args) {
