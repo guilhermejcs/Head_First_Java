@@ -1,3 +1,5 @@
+package cap11.pag248;
+
 import javax.sound.midi.*;
 
 public class MiniMusicCmdLine { // esse é o primeiro
