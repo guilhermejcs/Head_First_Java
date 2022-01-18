@@ -9,7 +9,7 @@ public class MiniMusicPlayer2 implements ControllerEventListener {
         mini.go();
     }
 
-    public void go(){
+    public void go() {
         try {
             Sequencer sequencer = MidiSystem.getSequencer();
             sequencer.open();
@@ -22,7 +22,7 @@ public class MiniMusicPlayer2 implements ControllerEventListener {
 
             for (int i = 5; i < 60; i += 4) {
                 track.add(makeEvent(144, 1, i, 100, i));
-                track.add(makeEvent(176,1,127,0,i));
+                track.add(makeEvent(176, 1, 127, 0, i));
                 track.add(makeEvent(128, 1, i, 100, i + 2));
             } // fim do loop
 
@@ -32,6 +32,11 @@ public class MiniMusicPlayer2 implements ControllerEventListener {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    } // fecha
+
+    int i = 0;
+    public void controlChange(ShortMessage event) {
+        System.out.println("la" + ++i );
     }
 
     public static MidiEvent makeEvent(int comd, int chan, int one, int two, int tick) {
