@@ -11,6 +11,7 @@ public class Button1 {
 
     private void go() {
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JButton button = new JButton("click like you mean it");
         frame.getContentPane().add(BorderLayout.EAST, button);
         frame.setSize(200,200);

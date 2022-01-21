@@ -11,6 +11,7 @@ public class Button3 {
 
     private void go() {
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JButton button = new JButton("Click This!");
         Font bigFont = new Font("serif", Font.BOLD, 28);
         button.setFont(bigFont);

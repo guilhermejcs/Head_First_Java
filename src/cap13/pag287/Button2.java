@@ -11,6 +11,7 @@ public class Button2 {
 
     private void go() {
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JButton button = new JButton("There is no spoon...");
         frame.getContentPane().add(BorderLayout.NORTH, button);
         frame.setSize(200,200);

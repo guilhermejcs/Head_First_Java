@@ -10,6 +10,7 @@ public class BorderLayout1 {
 
     private void go() {
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JButton east = new JButton("east");
         JButton west = new JButton("west");
         JButton north = new JButton("north");
