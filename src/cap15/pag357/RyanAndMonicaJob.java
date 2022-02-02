@@ -36,6 +36,17 @@ public class RyanAndMonicaJob implements Runnable{
         }
     }
 
-    private void makeWithdrawal(int i) {
+    private void makeWithdrawal(int amount) {
+        if (account.getBalance() >= amount) {
+            System.out.println(Thread.currentThread().getName() + " vai fazer uma retirada");
+            try {
+                System.out.println(Thread.currentThread().getName() + " vair dormir");
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(Thread.currentThread().getName() + " acordou");
+
+        }
     }
 }
