@@ -1,4 +1,4 @@
-package cap15.pag357;
+package cap15.pag359;
 
 class BankAccount {
     private int balance = 100;
@@ -36,7 +36,7 @@ public class RyanAndMonicaJob implements Runnable{
         }
     }
 
-    private void makeWithdrawal(int amount) {
+    private synchronized void makeWithdrawal(int amount) {
         if (account.getBalance() >= amount) {
             System.out.println(Thread.currentThread().getName() + " vai fazer uma retirada");
             try {
