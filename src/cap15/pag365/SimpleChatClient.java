@@ -23,7 +23,7 @@ public class SimpleChatClient {
     }
 
     private void go() {
-        JFrame frame = new JFrame("Ludicrously Simpe Chat Client");
+        JFrame frame = new JFrame("Ludicrously Simple Chat Client");
         JPanel mainPanel = new JPanel();
         incoming = new JTextArea(15, 50);
         incoming.setLineWrap(true);
@@ -40,14 +40,14 @@ public class SimpleChatClient {
         mainPanel.add(sendButton);
         setUpNetworking();
 
-        Thread readThread = new Thread(new IncomingReader());
-        readThread.start();
+        Thread readerThread = new Thread(new IncomingReader());
+        readerThread.start();
 
         frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
         frame.setSize(400, 500);
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     } // fecha go
 
     private void setUpNetworking() {
